@@ -21,3 +21,14 @@ function findPrime(...numbers)  {
 }
 
 findPrime(1,2, 5, 8, 21, 17, 25, 31, 11, 13,135 , 23423469) 
+
+
+//Arkadaş Sayı Bulma
+
+function friendlyNumbers(number1, number2) {
+    let friendNumber = 0
+    let friendNumber2 = 0
+
+
+}
+
