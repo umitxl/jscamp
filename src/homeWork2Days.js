@@ -80,7 +80,7 @@ perfectNumbers()
 
 function asalSayilar() {
     let asalSayi = 0
-    for (let asalSayi = 2; asalSayi < 100; asalSayi++) {
+    for (let asalSayi = 2; asalSayi < 1000; asalSayi++) {
         let counter = 0; 
         for (let i = 2; i < asalSayi; i++) {
             if (asalSayi%i == 0) {
