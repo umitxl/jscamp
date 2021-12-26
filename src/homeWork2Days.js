@@ -40,14 +40,58 @@ function friendlyNumbers(number1, number2) {
             friendNumber2 += i;
         }
     }
-    if (number1 == friendNumber2 && number2 == friendNumber) {
+    if (number1 == friendNumber2) {
         console.log("Arkadaş Sayılardır")
-    } else {
+    }
+    else if (number2 == friendNumber) {
+        console.log("Arkadaş Sayılardır")
+    }
+    else {
         console.log("Arkadaş Sayı Değildir")
     }
 
 
 }
-friendlyNumbers(220, 284)
+friendlyNumbers(17296, 18416)
+friendlyNumbers(5, 30)
 
-//
+
+//Mükemmel Sayılar
+
+function perfectNumbers() {
+    let perfectNumber = 1
+    for (let perfectNumber=1; perfectNumber <=1000; perfectNumber++) {
+        let total = 0;
+        for (let i = 1; i < perfectNumber; i++) {
+            if (perfectNumber %i == 0) {
+                total += i;
+            }
+
+        }
+        if (total == perfectNumber) {
+            console.log(perfectNumber + " " + "Mükemmel Sayıdır")
+        }
+
+    }
+}
+
+perfectNumbers()
+
+// 1000'e Kadar Asal Sayılar
+
+function asalSayilar() {
+    let asalSayi = 0
+    for (let asalSayi = 0; asalSayi < 1000; i++) {
+        let kalan = 0
+        for (let i = 0; i < asalSayi; i++) {
+            if (i% asalSayi == 0) {
+                kalan += i
+            }
+            if (kalan <= 2) {
+                console.log(asalSayi + " " + "Asal Sayıdır")
+            }
+        }
+    }
+}
+
+asalSayilar()
