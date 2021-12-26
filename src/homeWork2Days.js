@@ -76,22 +76,25 @@ function perfectNumbers() {
 }
 
 perfectNumbers()
-
-// 1000'e Kadar Asal Sayılar
+//1000'e kadar olan Asal Sayılar
 
 function asalSayilar() {
     let asalSayi = 0
-    for (let asalSayi = 0; asalSayi < 1000; i++) {
-        let kalan = 0
-        for (let i = 0; i < asalSayi; i++) {
-            if (i% asalSayi == 0) {
-                kalan += i
+    for (let asalSayi = 2; asalSayi < 1000; asalSayi++) {
+        let counter = 0; 
+        for (let i = 2; i < asalSayi; i++) {
+            if (asalSayi%i == 0) {
+                counter ++;
             }
-            if (kalan <= 2) {
-                console.log(asalSayi + " " + "Asal Sayıdır")
-            }
+            
         }
+        if (counter == 0) {
+            console.log(asalSayi + " " + "Asal Sayıdır")
+        }
+        
+        
     }
 }
 
 asalSayilar()
+
